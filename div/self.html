@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>self</title>
+
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            overflow: hidden;
+            zoom: 0.8;
+            width: 90%;
+        }
+
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        img{
+            border: 0;
+        }
+
+
+        /* css reset end */
+
+        @font-face {
+            font-family: 'Nunito-Bold';
+            src:url('../fonts/Nunito-Bold.ttf') format('truetype')
+        }
+
+        @font-face {
+            font-family: 'glyphicons-halflings-regular';
+            src: url('../fonts/glyphicons-halflings-regular.eot'); /* IE9+ */
+            src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/glyphicons-halflings-regular.woff') format('woff'), /* chrome、firefox */
+            url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url('../fonts/glyphicons-halflings-regular.svg#fontname') format('svg'); /* iOS 4.1- */
+        }
+        #myself,#skill{
+            font-family:'Nunito-Bold' ;
+            color: #00CFBD;
+            /*font-size: 30px;*/
+        }
+        #myself{
+            font-size: 25px;
+            width:100%;
+            position: relative;
+            height: 310px;
+        }
+        #myself table{
+           position: absolute;
+            left: 0;
+            top: 30px;
+            mso-cellspacing: 0;
+            cellpadding: 0;
+            width: 50%;
+        }
+        #myself table td{
+           display: inline-block;
+        }
+        #myself .photo{
+            position: absolute;
+            right: 0;
+            top:30px;
+            margin-left: 30px;
+            width: 50%;
+        }
+        #myself .photo img{
+            width: 100%;
+            height: 280px;
+        }
+        #skill{
+            font-size: 30px;
+            text-align: center;
+        }
+
+        #skill .progress{
+            width: 100%;
+            height: 20px;
+            background: #F5F5F5;
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+        #skill .progress div{
+            height: 100%;
+            border-radius: 5px 0 0 5px;
+        }
+        #skill .html{
+           /* width: 70%;*/
+            background: #0c5460;
+        }
+        #skill .css{
+            /*width: 50%;*/
+            background: #ACB5B8;
+        }
+        #skill .js{
+           /* width: 40%;*/
+            background: #78B3AE;
+        }
+
+    </style>
+</head>
+<body>
+<div id="myself">
+    <table >
+        <tr >
+            <th>Summary..</th>
+        </tr>
+        <tr>
+            <td>姓名：</td>
+            <td>王浩丞</td>
+        </tr>
+        <tr>
+            <td>性别:</td>
+            <td>男</td>
+        </tr>
+        <tr>
+            <td>学校：</td>
+            <td>黑龙江大学</td>
+        </tr>
+        <tr>
+            <td>年级：</td>
+            <td>2015级</td>
+        </tr>
+        <tr>
+            <td>学院：</td>
+            <td>信科</td>
+        </tr>
+        <tr>
+            <td>位置：</td>
+            <td>哈尔滨</td>
+        </tr>
+    </table>
+    <div class="photo" >
+        <img src="../img/photo.png" alt="my">
+    </div>
+</div>
+<div id="skill">
+    <h2>Skill..</h2>
+    <h3>HTML</h3>
+    <div class="progress">
+        <div class="html charts"></div>
+    </div>
+    <h3>CSS</h3>
+    <div class="progress">
+        <div class="css charts"></div>
+    </div>
+    <h3>JS</h3>
+    <div class="progress">
+        <div class="js charts"></div>
+    </div>
+
+
+</div>
+<script src="../js/jquery-1.12.4.js"></script>
+<script type="text/javascript">
+    $(function () {
+       /* var h = 70;
+        var c = 50;
+        var j = 40;*/
+        function animate() {
+            $(".charts").each(function (index,it) {
+                var a = 0 ;
+                if (index == 0){
+                    a = 70;
+
+                    change(a,it)
+                    console.log(0)
+                }
+                else  if (index == 1 ){
+                    a = 50;
+                    change(a,it)
+                    console.log(1)
+                }else {
+                    a = 40;
+                    change(a,it)
+                    console.log(2)
+                }
+            })
+        }
+        function change(a,it) {
+            $(it).animate({
+                width: a+"%"
+            },2000);
+        }
+
+        animate();
+    })
+</script>
+</body>
+</html>

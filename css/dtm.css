@@ -1,0 +1,22 @@
+#div1{
+    display: block;
+}
+#div2{
+    display: none;
+}
+@media (max-width: 910px) {
+    body{
+        overflow:hidden;overflow-y:auto;
+    }
+    #canvas,.wrapper{
+        display: none;
+    }
+
+    #div1{
+        display: none;
+    }
+    #div2{
+        display: block;
+    }
+
+}

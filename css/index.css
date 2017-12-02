@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /*height: 638px;*/
+    background: -webkit-linear-gradient(bottom right, #3F1344 10%, #4A1742 20%, #522357 50%, #5539B2);
+    background: linear-gradient(to top left, #3F1344 10%, #4A1742 20%, #522357 50%, #5539B2);
+    height: 100vh;
+    overflow: hidden;
+
+}
+#container{
+    height: 100%;
+    background: url("../div/bg.html") no-repeat;
+    background-size:cover ;
+    position: relative;
+}

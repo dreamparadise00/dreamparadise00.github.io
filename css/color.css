@@ -1,0 +1,89 @@
+#color{
+    width:40%;
+    height: 40%;
+
+
+
+}
+#color .iscolor{
+    width: 50px;
+    height: 50px;
+    float: left;
+    background: #ffffff ;
+    padding: 5px;
+    opacity: 0.5;
+    margin: 5px;
+    margin-right: 10px;
+
+}
+#color .iscolor img{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+#color .mycolor{
+    border:1px solid #C2C2C2;
+    width: 160px;
+    height: 250px;
+    padding: 10px;
+    font-size: 10px;
+    background: #ffffff;
+    float: left;
+    opacity: 0.9;
+    display: none;
+}
+#color .mycolor .change_color h1{
+    margin: 10px;
+}
+#color .mycolor .change_color ul{
+    margin-left:15px;
+}
+#color .mycolor .change_color li{
+    width: 28px;
+    height: 20px;
+    padding: 1px;
+    list-style: none;
+    float: left;
+    margin: 5px;
+    cursor:pointer;
+    background-image:url(../img/cssprint.png);
+}
+#skin_0{
+    background-position: 0 0;
+}
+#skin_1{
+    background-position: -35px 0;
+}
+#skin_2{
+    background-position: -70px 0;
+}
+#skin_3{
+    background-position: 0 -25px;
+}
+#skin_4{
+    background-position: -35px -25px;
+}
+#skin_5{
+    background-position: -70px -25px;
+}
+#skin_6{
+    background-position: 0 -50px;
+}
+#skin_7{
+    background-position: -35px -50px;
+}
+#skin_8{
+    background-position:  -70px -75px;
+}
+
+#skin_9{
+    background-position: 0 -75px;
+}
+#skin_10{
+    background-position: -35px -75px;
+}
+#skin_11{
+    background-position: -70px -75px;
+}
